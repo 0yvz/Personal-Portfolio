@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap');
+
+h1 {
+	font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+	font-size: 30px;
+	color: rgb(228, 228, 228);
+}
+
+h2 {
+	font-size: 20px;
+	color: rgb(228, 228, 228);
+	line-height: 30px;
+	text-transform: none;
+}
+
+.content-right {
+	position: absolute;
+	height: 500px;
+	width: 400px;
+	top: 250px;
+	right: 60px;
+	transform: skew(0deg, 30deg) scaleY(1.33333);
+	transition: 0.1s;
+}
+
+.content-right:hover {
+	top: 80px;
+	transform: skew(0deg, 0deg) scaleY(1);
+}
+
+.content-left {
+	position: absolute;
+	height: 500px;
+	width: 400px;
+	top: 270px;
+	right: 470px;
+	transform: skew(0deg, -30deg) scaleY(1.33333);
+	transition: 0.1s;
+}
+
+.content-left:hover {
+	position: absolute;
+	height: 500px;
+	width: 550px;
+	top: 150px;
+	right: 470px;
+	transform: skew(0deg, 0deg) scaleY(1.3);
+}

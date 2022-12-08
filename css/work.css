@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap');
+
+.work-1{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: beige;
+	color: black;
+	position: absolute;
+	height: 200px;
+	width: 200px;
+	top: 250px;
+	right: 60px;
+	transform: skew(0deg, 30deg) scaleY(1.33333);
+}
+
+.work-2{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: beige;
+	color: black;
+	position: absolute;
+	height: 200px;
+	width: 200px;
+	top: 250px;
+	right: 270px;
+	transform: skew(0deg, -30deg) scaleY(1.33333);
+}
+
+.work-3{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: beige;
+	color: black;
+	position: absolute;
+	height: 200px;
+	width: 200px;
+	top: 250px;
+	right: 480px;
+	transform: skew(0deg, 30deg) scaleY(1.33333);
+}
+
+.work-4{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: beige;
+	color: black;
+	position: absolute;
+	height: 200px;
+	width: 200px;
+	top: 450px;
+	right: 590px;
+	transform: skew(60deg, -30deg) scaleY(0.59);
+}
+
+.work-5{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: beige;
+	color: black;
+	position: absolute;
+	height: 200px;
+	width: 200px;
+	top: 650px;
+	right: 695px;
+	transform: skew(0deg, 30deg) scaleY(1.33333);
+}
+
+.work-6{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: beige;
+	color: black;
+	position: absolute;
+	height: 200px;
+	width: 200px;
+	top: 650px;
+	right: 905px;
+	transform: skew(0deg, -30deg) scaleY(1.33333);
+}

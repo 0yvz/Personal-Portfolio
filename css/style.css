@@ -1,0 +1,106 @@
+/* 
+Menu inspired by: https://codepen.io/bosworthco/pen/YWBLpR?editors=0100 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap');
+
+html {
+	margin: auto;
+	padding: 0;
+	font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+	font-size: 68px;
+	font-weight: 900;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	height: 50px;
+	line-height: 55px;
+	list-style-type: none;
+}
+
+
+/* menu button */
+.cover{
+	clip-path: polygon(100% 0, 0 0, 0 64%);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 500px;
+	height: 450px;
+	background-color: #191919;
+	z-index: 10;
+}
+
+.menu__button {
+	position: absolute;
+	top: 60px;
+	left: 30px;
+	z-index: 20;
+}
+
+.menu__first-name {
+	/* transform: translate3d(0, 0px, 0); */
+	transform: skew(0deg, -30deg) scaleY(1.33333);
+	margin-bottom: 15px;
+	background: #191919;
+	width: 130%;
+	top: 200px;
+}
+
+.menu__last-name {
+	/* transform: translate3d(0, 0px, 0); */
+	transform: skew(60deg, -30deg) scaleY(0.66667);
+	background: #191919;
+	width: 130%;
+}
+
+
+/* dropdown navigation */
+.menu__navigation {
+	transform: skew(0deg, -30deg) scaleY(1.33333) translateY(-200px);
+	position: absolute;
+	left: 66px;
+	top: 190px;
+	overflow: hidden;
+	list-style-type: none;
+	transition: 0.4s ease-in-out;
+}
+
+.menu__navigation--visible {
+	transform: skew(0deg, -30deg) scaleY(1.33333);
+	display: inline-block;
+	position: absolute;
+	left: 66px;
+	top: 230px;
+	height: auto;
+	overflow: hidden;
+	list-style-type: none;
+	transition: 0.4s ease-in-out;
+}
+
+
+/* underline animation for menu */
+.hover-underline-animation {
+	position: relative;
+	color: #ffffff;
+	display: inline-block;
+}
+
+.hover-underline-animation::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #ffffff;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+ }
